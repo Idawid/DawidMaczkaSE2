@@ -14,13 +14,9 @@ namespace SE2_UnitTest
         [InlineData("//[*][%]\n1*2%3", 6)]
         public void Add_ShouldReturnCorrectResult(string numbers, int expected)
         {
-            // Arrange
             var calculator = new StringCalculator();
-
-            // Act
             var result = calculator.Add(numbers);
 
-            // Assert
             Assert.Equal(expected, result);
         }
 
